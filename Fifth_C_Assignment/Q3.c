@@ -8,7 +8,6 @@ int main()
 	int arr[5];
 	accept_arr(arr,5);
 	printf("The array before reverse: \n");
-
 	print_arr(arr,5);
 	reverse(arr,5);
 
@@ -19,9 +18,9 @@ int main()
 
 void accept_arr(int arr[],int n)
 {  
+	printf("Enter the elements: \n");
 	for(int i=0;i<n;i++)
 	{
-		printf("Enter the elements: \n");
 		scanf("%d",&arr[i]);
 	}
 }
@@ -47,7 +46,7 @@ void print_arr(int arr[],int n)
 {  
 	for(int i=0;i<n;i++)
 	{
-		printf("The elements of the array : %d \n",arr[i]);
+		printf(" %d \n",arr[i]);
 	}
 }
 
