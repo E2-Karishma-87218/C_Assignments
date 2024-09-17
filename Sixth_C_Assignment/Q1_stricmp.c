@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
 	printf("Enter the 2nd string: ");
 	scanf("%*c%[^\n]s",str2);
 
-	result=strcmpi(str1,str2);
+	result=stricmp(str1,str2);
 
 	if(result==0)
 		printf("Strings are equal\n");
