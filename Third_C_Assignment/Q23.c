@@ -12,9 +12,10 @@ void printPascalsTriangle(int rows)
 			if (j == 0 || j == i) 
 			{
 				pascal[i][j] = 1;
-			}
+			} 
 			else
-			{    
+			{
+
 				pascal[i][j] = pascal[i - 1][j - 1] + pascal[i - 1][j];
 			}
 		}
@@ -35,22 +36,22 @@ void printPascalsTriangle(int rows)
 	}
 }
 
-int main() 
-{
+int main() {
 	int rows;
 
+	// Accept the number of rows from the user
 	printf("Enter the number of rows for Pascal's Triangle: ");
 	scanf("%d", &rows);
 
-	if (rows <= 0) 
-	{
+	// Validate input
+	if (rows <= 0) {
 		printf("Number of rows must be a positive integer.\n");
 		return 1;
 	}
 
+	// Print Pascal's Triangle
 	printPascalsTriangle(rows);
 
 	return 0;
 }
-
 
